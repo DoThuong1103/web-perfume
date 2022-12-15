@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>toidicode.com</title>
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <button id="myBtn">Click vào đây</button>
+
+    <script>
+      // Tạo ra các hàm tùy chỉnh
+      function hamDauTien() {
+        alert("Hàm đầu tiên thực thi thành công!");
+      }
+
+      function hamThuHai() {
+        alert("Hàm thứ hai thực thi thành công!");
+      }
+
+      // Nhắm đến phần tử myBtn
+      var btn = document.getElementById("myBtn");
+
+      // Gán Event Listener cho phần tử button
+      btn.addEventListener("click", hamDauTien);
+      btn.addEventListener("click", hamThuHai);
+    </script>
+  </body>
+</html>
